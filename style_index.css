@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    /*max-width:fit-content;*/
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgb(0,0,0,0.1)), url("pictures/other/background_picture_earth_sun3.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    width: 5%;
+    cursor: pointer;
+    border: 0;
+    border-radius: 100px;
+}
+.menu-icon{
+    width: 3%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size:15px;
+}
+
+.navbar ul li{
+    position: relative;
+}
+
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: rgb(235, 49, 49);
+    position: absolute;
+    left:0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%
+}
+
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h1{
+    color: #fff;
+    font-size: 65px;
+}
+p {
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+button{
+    width: 130px;
+    padding: 12px 0;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 3px solid rgb(235, 49, 49);
+    background: transparent;
+    color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    z-index: 0;
+    font-size: 20px;
+}
+
+span{
+    background: rgb(235, 49, 49);
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    transition: 0.5s;
+
+}
+.card{
+    height: 185px;
+    width: 185px;
+    display: inline-block;
+    border-radius: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 27px 30px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    margin-left: 24%;
+    color: rgb(255, 255, 255);
+    background-image: url(pictures/other/ao_logo.png);
+}
+.card2{
+    color: rgb(255, 255, 255);
+    background-image: url(pictures/other/ao_logo_fc.png);
+}
+.card3{
+    color:  rgb(0, 0, 0);
+    background-image: url(pictures/other/astrogate_logo.png);
+}
+.card4{
+    color: rgb(0, 0, 0);
+    background-image: url(pictures/other/logo_3.png);
+}
+.card:hover{
+    transform: translateY(-10px);
+    border: 5px solid;
+    border-color: rgb(235, 49, 49);
+
+}
+h5 {
+    text-shadow: 0 0 5px #999;
+    font-size: 14px;
+    text-align: center;
+    padding: 3px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 20px;
+}
+
+.deska{
+    background-color: rgb(0,0,0,0.5);
+    height: 30%;
+    width: 82%;
+    color: #fff;
+    font-size: 18px;
+    text-align: right;
+    padding-left: 0px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    z-index: -2;
+}
+
+.anim1{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 1.0s linear forwards;
+    animation-delay: 0.5s;
+}
+
+.anim2{
+    opacity: 0;
+    transform: translateX(30px);
+    animation: moveup 1.0s linear forwards;
+    animation-delay: 1.5s;
+}
+
+.anim3{
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: moveup 1.0s linear forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes moveup { 100%{opacity: 1;
+    transform: translateY(0px)}};
+
+a {
+  color: rgb(255,255,255);
+}
+
+a:visited {
+  color: rgb(255,255,255);
+}
+
+a:hover {
+  color: rgb(255,255,255);
+}
+
+a:active {
+  color: rgb(255,255,255);
+}
