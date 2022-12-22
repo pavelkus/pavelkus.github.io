@@ -1,9 +1,8 @@
 *{
-    margin: 0;
+    margin: 0;    
     padding: 0;
     font-family: sans-serif;
 }
-
 
 .container {
     width: 100%;
@@ -16,11 +15,16 @@
     padding-right: 8%;
     box-sizing: border-box;
 }
+
+
 .navbar{
     height: 12%;
     display: flex;
     align-items: center;
-    
+    min-width: 900px;
+    max-width: 1500px;  
+    margin-left: auto;
+    margin-right: auto;    
 }
 .logo{
     width: 5%;
@@ -70,14 +74,38 @@ nav ul li a{
 
 
 .row{
-    display: flex;
+    /*display: flex;*/
     height: 88%;
     align-items: center;
+    width: 100%;
+    padding-top: 100px;
 }
 
-.col{
-    flex-basis: 50%;
+
+.content{
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    margin-left: auto; 
+    margin-right: auto;
+    min-width: 900px;
+    max-width: 1500px;
 }
+
+
+
+
+.col{
+    /*
+    flex-basis: 50%;
+    */
+    display: inline-block;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
 
 h1{
     color: #fff;
@@ -138,23 +166,28 @@ button:hover{
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
+    border: 5px solid;
 }
 .card1{
-    margin-left: 24%;
+    margin: 5% 31%;
     color: rgb(255, 255, 255);
+    border-color: rgb(0,0,0,0);
     background-image: url(pictures/other/ao_logo.png);
 }
 .card2{
     color: rgb(255, 255, 255);
+    border-color: rgb(0,0,0,0);
     background-image: url(pictures/other/ao_logo_fc.png);
 }
 .card3{
     color:  rgb(0, 0, 0);
+    border-color: rgb(0,0,0,0);
     background-image: url(pictures/other/astrogate_logo.png);
 }
 .card4{
     color: rgb(0, 0, 0);
     background-image: url(pictures/other/logo_3.png);
+    border-color: rgb(0,0,0,0);
 }
 .card:hover{
     transform: translateY(-10px);
@@ -180,7 +213,7 @@ li {
 .deska{
     background-color: rgb(0,0,0,0.5);
     height: 30%;
-    width: 82%;
+    width: 510px;
     color: #fff;
     font-size: 18px;
     text-align: right;
@@ -190,6 +223,8 @@ li {
     padding-bottom: 15px;
     border-radius: 15px;
     z-index: -2;
+    max-width: 700px;
+    border: 0;
 }
 
 .anim1{
@@ -230,4 +265,8 @@ a:hover {
 
 a:active {
   color: rgb(255,255,255);
+}
+
+.two_windows{
+    display: inline-block;
 }

@@ -28,7 +28,10 @@ body{
     height: 12%;
     display: flex;
     align-items: center;
-    
+    min-width: 900px;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;    
 }
 .logo{
     width: 5%;
@@ -46,12 +49,12 @@ nav{
     text-align: right;
 }
 
-nav ul li{
+.navbar nav ul li{
     list-style: none;
     display: inline-block;
     margin-left: 30px;
 }
-nav ul li a{
+.navbar nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size:15px;
@@ -76,11 +79,11 @@ nav ul li a{
     width: 100%
 }
 
-ul {
+.navbar ul {
     list-style-type: none;
 }
 
-li {
+.navbar li {
     padding: 20px;
 }
 
@@ -139,4 +142,23 @@ li {
     border-radius: 70px;
     display: flex;
    justify-content: center;
+}
+
+.whiteboard ul li{
+  margin: 0.75em 0;
+  padding: 0 0.7em;
+  list-style: none;
+  font-size: 16px;
+}
+
+
+.whiteboard li::marker {
+    content: "▶";
+  }
+
+.description{
+    width: 800px;
+    margin-left: auto; 
+    margin-right: auto;
+    font-size: 10px;
 }
