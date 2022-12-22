@@ -95,20 +95,6 @@ li {
     padding: 25px;
     max-width: 900px;
     border-radius: 70px;
-    /*
-    background-color: rgb(255,255,255,0.9);
-    position: center;
-    height: 100%;
-    width: 50%;
-    color: #fff;
-    font-size: 18px;
-    text-align: right;
-    padding-left: 0px;
-    padding-right: 20px;
-    padding-top: 3px;
-    padding-bottom: 15px;
-    border-radius: 15px;
-    */
 }
 .whiteboard p{
     padding: 8px 20px;
@@ -137,5 +123,20 @@ li {
 
 .inter_fig{
    display: flex;
+   justify-content: center;
+}
+
+.whiteboardh1{
+    width: 150px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-left: auto; 
+    margin-right: auto;
+    padding: 25px;
+    max-width: 900px;
+    border-radius: 70px;
+    display: flex;
    justify-content: center;
 }
