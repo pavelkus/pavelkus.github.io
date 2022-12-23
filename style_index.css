@@ -14,6 +14,14 @@ body{
     background-size: cover;
     background-position: center;
     z-index: 1;
+
+    /*musíš udělat tak, aby byl obsah na středu obrazovky*/
+    /*
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    */
+
 }
 
 .container {
@@ -224,7 +232,6 @@ button:hover{
     transform: translateY(-10px);
     border: 5px solid;
     border-color: rgb(235, 49, 49);
-
 }
 h5 {
     text-shadow: 0 0 5px #999;
