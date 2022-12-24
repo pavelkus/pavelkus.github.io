@@ -142,7 +142,26 @@ nav{
     border-radius: 70px;
     display: flex;
    justify-content: center;
+   text-align: center;
 }
+.whiteboardh1_2{
+    width: 300px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-left: auto; 
+    margin-right: auto;
+    padding: 25px;
+    max-width: 900px;
+    border-radius: 70px;
+    display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+
+
 
 .whiteboard ul li{
   margin: 0.75em 0;
@@ -241,3 +260,57 @@ nav{
     height: 150px;
     border-radius: 200px;
 }
+
+
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .content_subsection{
+    background-color: #bbb;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 5px;
+    margin: 1px;
+    margin: 3px 0;
+  }
+
+  .content_subsection:hover{
+    background-color: #aaa;
+  }
+
+  .panel a{
+    text-decoration: none;
+  }
