@@ -265,16 +265,16 @@ nav{
 
 
 .accordion {
-    background-color: #eee;
+    background-color: #ddd;
     color: #444;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+    border: none;
 
     border-radius: 5px;
     margin-bottom: 5px;
@@ -282,6 +282,7 @@ nav{
   
   .active, .accordion:hover {
     background-color: #ccc; 
+    box-shadow: -1px 0 10px #000000;
   }
   
   .panel {
@@ -303,12 +304,13 @@ nav{
     font-size: 15px;
     transition: 0.4s;
     border-radius: 5px;
-    margin: 1px;
-    margin: 3px 0;
+    /*margin: 1px;*/
+    margin: 4px 0;
   }
 
   .content_subsection:hover{
     background-color: #aaa;
+    box-shadow: -1px 0 10px #000000;
   }
 
   .panel a{
