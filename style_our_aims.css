@@ -108,6 +108,11 @@ nav{
     font-size: 27px;
 }
 
+.whiteboard h3{
+    padding: 10px;
+    font-size: 20px;
+}
+
 .whiteboard a {
     color: rgb(255,0,0);
   }
@@ -277,7 +282,7 @@ nav{
     border: none;
 
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   
   .active, .accordion:hover {
@@ -315,4 +320,12 @@ nav{
 
   .panel a{
     text-decoration: none;
+  }
+
+  .content_pictures{
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
   }
